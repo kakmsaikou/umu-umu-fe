@@ -4,7 +4,7 @@ import {
   RouteRecordRaw,
 } from 'vue-router';
 import { About } from '../views/About';
-import { Home } from '../views/home';
+import { Home } from '../views/Home';
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: Home },
