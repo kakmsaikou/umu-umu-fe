@@ -1,4 +1,8 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import {
+  createRouter,
+  createWebHashHistory,
+  RouteRecordRaw,
+} from 'vue-router';
 import { About } from '../views/About';
 import { Home } from '../views/home';
 
