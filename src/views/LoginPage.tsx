@@ -16,7 +16,7 @@ export const LoginPage = defineComponent({
     return () => (
       <>
         <BackgroundWithCircle>
-          <div class={s.loginFormWrapper}>
+          <form class={s.loginFormWrapper}>
             <div class={s.inputWrapper}>
               <SvgIcon class={s.svgIcon} name="email" color="#999999" />
               <input
@@ -35,7 +35,7 @@ export const LoginPage = defineComponent({
               <RoundButton onClick={handleGetEvc} text="获取验证码" />
             </div>
             <SquareButton onClick={handleLogin} text="登录" />
-          </div>
+          </form>
         </BackgroundWithCircle>
       </>
     );
