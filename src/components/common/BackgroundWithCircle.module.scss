@@ -18,11 +18,25 @@
     z-index: var(--bg-z-index);
   }
 
-  .neroLogo {
-    width: 150px;
+  .neroWrapper {
     position: absolute;
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: var(--bg-z-index);
+
+    > .neroLogo {
+      // 不要让图片宽度超过文字宽度太多
+      width: calc(var(--nero-text-font-size) * 5.5);
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 4px;
+    }
+
+    > .neroText {
+      font-size: var(--nero-text-font-size);
+      color: var(--nero-text-color);
+      text-align: center;
+    }
   }
 }
