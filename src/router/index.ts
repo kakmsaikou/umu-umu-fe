@@ -1,14 +1,14 @@
+import { WordPage } from './../views/WordPage';
+import { LoginPage } from './../views/LoginPage';
 import {
   createRouter,
   createWebHashHistory,
   RouteRecordRaw,
 } from 'vue-router';
-import { LoginPage } from './../views/LoginPage';
-import { About } from '../views/About';
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: LoginPage },
-  { path: '/about', component: About },
+  { path: '/word', component: WordPage },
 ];
 
 export const router = createRouter({
