@@ -3,11 +3,11 @@ import {
   createWebHashHistory,
   RouteRecordRaw,
 } from 'vue-router';
+import { LoginPage } from './../views/LoginPage';
 import { About } from '../views/About';
-import { Home } from '../views/Home';
 
 const routes: RouteRecordRaw[] = [
-  { path: '/', component: Home },
+  { path: '/', component: LoginPage },
   { path: '/about', component: About },
 ];
 
