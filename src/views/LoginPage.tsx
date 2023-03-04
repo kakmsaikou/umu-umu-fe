@@ -1,11 +1,11 @@
 import { defineComponent } from 'vue';
+import { BackgroundWithCircle } from '../components/commen/BackgroundWithCircle';
 import s from './LoginPage.module.scss';
 
 export const LoginPage = defineComponent({
   setup: () => {
-    return () => <div class={s.wrapper}>
-      <div class={s.bgCircle}></div>
+    return () => <BackgroundWithCircle>
       <div>LoginPage</div>
-    </div>;
+    </BackgroundWithCircle>
   },
 });
