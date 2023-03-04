@@ -7,6 +7,12 @@ import s from './LoginPage.module.scss';
 
 export const LoginPage = defineComponent({
   setup: () => {
+    const handleGetEvc = () => {
+      console.log('获取验证码');
+    };
+    const handleLogin = () => {
+      console.log('登录');
+    };
     return () => (
       <>
         <BackgroundWithCircle>
@@ -26,9 +32,9 @@ export const LoginPage = defineComponent({
                 type="text"
                 placeholder="请输入验证码"
               />
-              <RoundButton text='获取验证码' />
+              <RoundButton onClick={handleGetEvc} text="获取验证码" />
             </div>
-            <SquareButton text="登录" />
+            <SquareButton onClick={handleLogin} text="登录" />
           </div>
         </BackgroundWithCircle>
       </>

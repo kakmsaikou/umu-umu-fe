@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
 import s from './SquareButton.module.scss';
 
 export const SquareButton = defineComponent({
@@ -7,8 +7,13 @@ export const SquareButton = defineComponent({
       type: String,
       required: true,
     },
+    onClick: Function as PropType<() => void>,
   },
-  setup: (props) => {
-    return () => <button class={[s.squareButton]}>{props.text}</button>;
+  setup: props => {
+    return () => (
+      <button class={[s.squareButton]} onClick={props.onClick}>
+        {props.text}
+      </button>
+    );
   },
 });
