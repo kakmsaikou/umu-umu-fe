@@ -10,4 +10,7 @@
   font-size: var(--nero-text-font-size);
   color: var(--nero-text-color);
   text-align: center;
+  max-width: calc(100vw - 60px);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
