@@ -1,4 +1,4 @@
-import { defineComponent, PropType } from 'vue';
+import { defineComponent } from 'vue';
 import s from './BackgroundWithCircle.module.scss';
 import { NeroLogoWithText } from './NeroLogoWithText';
 
