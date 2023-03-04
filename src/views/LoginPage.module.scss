@@ -1,6 +1,6 @@
 .loginFormWrapper {
-  width: 372px;
+  width: calc(100% - 32px);
   height: 341px;
   background-color: #FFFF;
   border-radius: 8%;
-}
+  box-shadow: var(--login-form-box-shadow)}
