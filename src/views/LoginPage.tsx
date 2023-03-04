@@ -5,8 +5,12 @@ import s from './LoginPage.module.scss';
 
 export const LoginPage = defineComponent({
   setup: () => {
-    return () => <BackgroundWithCircle>
-      <NeroLogoWithText/>
-    </BackgroundWithCircle>
+    return () => (
+      <>
+        <BackgroundWithCircle>
+          <div class={s.loginFormWrapper}></div>
+        </BackgroundWithCircle>
+      </>
+    );
   },
 });

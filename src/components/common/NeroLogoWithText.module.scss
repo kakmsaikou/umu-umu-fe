@@ -1,15 +1,13 @@
-.wrapper {
-  > .neroLogo {
-    // 不要让图片宽度超过文字宽度太多
-    width: calc(var(--nero-text-font-size) * 5.5);
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 4px;
-  }
+.neroLogo {
+  // 不要让图片宽度超过文字宽度太多
+  width: calc(var(--nero-text-font-size) * 5.5);
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
 
-  > .neroText {
-    font-size: var(--nero-text-font-size);
-    color: var(--nero-text-color);
-    text-align: center;
-  }
+.neroText {
+  font-size: var(--nero-text-font-size);
+  color: var(--nero-text-color);
+  text-align: center;
 }

@@ -11,7 +11,7 @@ export const NeroLogoWithText = defineComponent({
   },
   setup: props => {
     return () => (
-      <div class={s.wrapper}>
+      <div>
         <img class={s.neroLogo} src={NeroLogo} alt="" />
         <div class={s.neroText}>{props.neroText}</div>
       </div>

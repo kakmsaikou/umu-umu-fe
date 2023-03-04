@@ -17,4 +17,15 @@
     transform: translateX(-50%);
     z-index: var(--bg-z-index);
   }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .NeroLogoWithText {
+      padding-top: 4vh;
+      padding-bottom: 12px;
+    }
+  }
 }
