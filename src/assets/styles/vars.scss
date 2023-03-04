@@ -5,4 +5,13 @@
   --nero-text-color: white;
   --nero-text-font-size: 24px;
   --login-form-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  --round-button-text-color: white;
+  --round-button-bg-color: #e65f65;
+  --square-button-text-color: white;
+  --square-button-bg-color: linear-gradient(
+    90deg,
+    rgba(231, 96, 102, 1) 0%,
+    rgba(255, 128, 107, 1) 100%
+  );
+  --square-button-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
