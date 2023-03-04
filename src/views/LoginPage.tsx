@@ -9,14 +9,22 @@ export const LoginPage = defineComponent({
       <>
         <BackgroundWithCircle>
           <div class={s.loginFormWrapper}>
-            <div>
-              <SvgIcon name="email" color="#999999" />
-              <input type="text" placeholder="请输入邮箱地址" />
+            <div class={s.inputWrapper}>
+              <SvgIcon class={s.svgIcon} name="email" color="#999999" />
+              <input
+                class={s.emailInput}
+                type="text"
+                placeholder="请输入邮箱地址"
+              />
             </div>
-            <div>
-              <SvgIcon name="key" color="#999999" />
-              <input type="text" placeholder="请输入验证码" />
-              <button>获取验证码</button>
+            <div class={s.inputWrapper}>
+              <SvgIcon class={s.svgIcon} name="key" color="#999999" />
+              <input
+                class={s.evcInput}
+                type="text"
+                placeholder="请输入验证码"
+              />
+              <button class={s.evcButton}>获取验证码</button>
             </div>
             <button>登陆</button>
           </div>

@@ -1,7 +1,39 @@
 .loginFormWrapper {
-  width: calc(100% - 32px);
-  height: 341px;
   background-color: #ffff;
   border-radius: 7%;
   box-shadow: var(--login-form-box-shadow);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 64px 24px 0;
+  margin: 0 16px;
+  z-index: 10;
+
+  .inputWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    height: 48px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #ededed;
+
+    input {
+      margin-left: 8px;
+      width: 100%;
+      border: none;
+      font-size: 18px;
+    }
+
+    .evcInput {
+      flex-grow: 1;
+      margin-right: 8px;
+    }
+
+    .evcButton {
+      flex-shrink: 0;
+      width: 112px;
+      margin-left: auto;
+    }
+  }
 }
