@@ -2,6 +2,7 @@ import { defineComponent } from 'vue';
 import { BackgroundWithCircle } from '../components/common/BackgroundWithCircle';
 import { SvgIcon } from '../components/common/SvgIcon';
 import s from './LoginPage.module.scss';
+import {Button} from 'vant'
 
 export const LoginPage = defineComponent({
   setup: () => {
@@ -26,7 +27,7 @@ export const LoginPage = defineComponent({
               />
               <button class={s.evcButton}>获取验证码</button>
             </div>
-            <button>登陆</button>
+            <Button>登陆</Button>
           </div>
         </BackgroundWithCircle>
       </>

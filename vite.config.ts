@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import path from 'path';
+import styleImport, {VantResolve} from 'vite-plugin-style-import';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,6 +19,9 @@ export default defineConfig({
       symbolId: 'icon-[dir]-[name]',
       inject: 'body-first',
       customDomId: '__svg__icons__dom__',
+    }),
+    styleImport({
+      resolves: [VantResolve()],
     }),
   ],
   server: {
