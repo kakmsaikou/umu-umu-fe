@@ -23,6 +23,9 @@
       width: 100%;
       border: none;
       font-size: 18px;
+
+      outline: none;
+      caret-color: var(--input-text-caret-color);
     }
 
     .evcInput {
