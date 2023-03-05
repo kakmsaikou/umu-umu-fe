@@ -1,1 +1,146 @@
-.wrapper{}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-color: #fef4f3;
+  height: 100vh;
+
+  .menuIcon {
+    margin: 8px 0;
+    margin-left: auto;
+  }
+
+  .wordWrapper {
+    background-color: white;
+    color: #e65f65;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+
+    .ward {
+      font-size: 44px;
+    }
+
+    .pronunciation {
+      font-size: 18px;
+
+      .voiceIcon {
+        margin-left: 4px;
+        height: 1em;
+        width: 1em;
+      }
+    }
+  }
+
+  .detailWrapper {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    padding: 18px;
+    flex-grow: 10;
+
+    h2 {
+      color: white;
+      border-radius: 3px;
+      background-color: #e65f65;
+      font-size: 18px;
+      padding: 2px 8px;
+      margin-bottom: 0.5em;
+    }
+
+    .meaning {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 1em;
+
+      .partOfSpeech {
+        border-bottom: 3px solid #00d4f7;
+      }
+    }
+
+    .examples {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li > p {
+        margin-bottom: 0.5em;
+      }
+
+      .translation {
+        color: #999;
+      }
+    }
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    margin-top: 16px;
+    margin-bottom: 64px;
+
+    button {
+      border: none;
+      font-size: 24px;
+      width: 4em;
+      height: 2em;
+      border-radius: 6%;
+      color: white;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    li:first-child button {
+      background-color: #4ac87e;
+    }
+
+    li:nth-child(2) button {
+      background-color: #ff9f48;
+    }
+
+    li:nth-child(3) button {
+      background-color: #e65f65;
+    }
+  }
+}
+
+.footerBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  width: 100%;
+  border-top: 1px solid #ddd;
+
+  > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 0;
+    color: #999b9a;
+    font-size: 12px;
+
+    .svgIcon {
+      width: 2.1em;
+      height: 2.1em;
+    }
+
+    button {
+      color: currentColor;
+      background-color: transparent;
+      border: none;
+    }
+
+    &.selected {
+      color: #e65f65;
+    }
+  }
+}
