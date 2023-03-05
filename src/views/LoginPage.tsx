@@ -25,6 +25,7 @@ export const LoginPage = defineComponent({
                 placeholder="请输入邮箱地址"
               />
             </div>
+
             <div class={s.inputWrapper}>
               <SvgIcon class={s.svgIcon} name="key" color="#999999" />
               <input
@@ -34,6 +35,7 @@ export const LoginPage = defineComponent({
               />
               <RoundButton onClick={handleGetEvc} text="获取验证码" />
             </div>
+            
             <SquareButton onClick={handleLogin} text="登录" />
           </form>
         </BackgroundWithCircle>

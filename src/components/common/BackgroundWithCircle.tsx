@@ -10,6 +10,7 @@ export const BackgroundWithCircle = defineComponent({
     return () => (
       <div class={s.wrapper}>
         <div class={s.bgCircle} />
+        
         <div class={s.mainContent}>
           <NeroLogoWithText
             class={s.NeroLogoWithText}
