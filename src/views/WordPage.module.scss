@@ -46,6 +46,10 @@
     height: 100%;
     overflow: auto;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     h2 {
       color: white;
       border-radius: 3px;
