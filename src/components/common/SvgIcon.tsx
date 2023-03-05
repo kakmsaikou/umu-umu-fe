@@ -11,16 +11,12 @@ export const SvgIcon = defineComponent({
       type: String,
       required: true,
     },
-    color: {
-      type: String,
-      default: '#333',
-    },
   },
   setup: props => {
     const symbolId = computed(() => `#${props.prefix}-${props.name}`);
     return () => (
       <svg class={s.svgTag} aria-hidden="true">
-        <use xlinkHref={symbolId.value} fill={props.color} />
+        <use xlinkHref={symbolId.value} />
       </svg>
     );
   },

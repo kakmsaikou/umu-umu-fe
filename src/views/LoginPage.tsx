@@ -18,7 +18,7 @@ export const LoginPage = defineComponent({
         <BackgroundWithCircle>
           <form class={s.loginFormWrapper}>
             <div class={s.inputWrapper}>
-              <SvgIcon class={s.svgIcon} name='email' color='#999999' />
+              <SvgIcon class={s.svgIcon} name='email' />
               <input
                 class={s.emailInput}
                 type='text'
@@ -27,7 +27,7 @@ export const LoginPage = defineComponent({
             </div>
 
             <div class={s.inputWrapper}>
-              <SvgIcon class={s.svgIcon} name='key' color='#999999' />
+              <SvgIcon class={s.svgIcon} name='key' />
               <input
                 class={s.evcInput}
                 type='text'
