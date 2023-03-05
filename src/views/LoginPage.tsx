@@ -6,6 +6,9 @@ import { SvgIcon } from '../components/common/SvgIcon';
 import s from './LoginPage.module.scss';
 
 export const LoginPage = defineComponent({
+  provide: {
+    neroLogoText: '　うむうむ！',
+  },
   setup: () => {
     const handleGetEvc = () => {
       console.log('获取验证码');
@@ -35,7 +38,6 @@ export const LoginPage = defineComponent({
               />
               <RoundButton onClick={handleGetEvc} text='获取验证码' />
             </div>
-
             <SquareButton onClick={handleLogin} text='登录' />
           </form>
         </BackgroundWithCircle>
