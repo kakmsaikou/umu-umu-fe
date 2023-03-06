@@ -24,17 +24,21 @@
     align-items: center;
     padding: 16px 0;
 
-    .ward {
-      font-size: 44px;
+    .word {
+      font-size: 24px;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
     }
 
     .pronunciation {
-      font-size: 18px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
 
       .voiceIcon {
         margin-left: 4px;
-        height: 1em;
-        width: 1em;
       }
     }
   }
@@ -51,11 +55,8 @@
       color: white;
       border-radius: 3px;
       background-color: #e65f65;
-      font-size: 18px;
-      padding: 2px 8px;
+      padding: 1px 4px;
       margin-bottom: 0.5em;
-      // 这里 h2 高度写死了所以直接用 px，后期修改时注意
-      line-height: 24px;
     }
 
     .meaning {

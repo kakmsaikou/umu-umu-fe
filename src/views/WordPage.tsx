@@ -1,6 +1,7 @@
 import { defineComponent, reactive } from 'vue';
 import { FooterBar } from '../components/common/FooterBar';
 import { SvgIcon } from '../components/common/SvgIcon';
+import { Voice } from '../components/word/Voice';
 import s from './WordPage.module.scss';
 
 export const WordPage = defineComponent({
@@ -52,8 +53,8 @@ export const WordPage = defineComponent({
         <div class={s.wordWrapper}>
           <h1 class={s.word}>{wordData.word}</h1>
           <div class={s.pronunciation}>
-            {wordData.pronunciation}
-            <SvgIcon class={s.voiceIcon} name='voice' onClick={handleVoiceClick}/>
+            <span>{wordData.pronunciation}</span>
+            <Voice class={s.voiceIcon}/>
           </div>
         </div>
 
