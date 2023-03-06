@@ -1,4 +1,5 @@
 import { defineComponent, reactive } from 'vue';
+import { FooterBar } from '../components/common/FooterBar';
 import { SvgIcon } from '../components/common/SvgIcon';
 import s from './WordPage.module.scss';
 
@@ -77,24 +78,7 @@ export const WordPage = defineComponent({
           </li>
         </ul>
 
-        <ul class={s.footerBar}>
-          <li class={s.selected}>
-            <SvgIcon class={s.svgIcon} name='time' />
-            <button>复习</button>
-          </li>
-          <li>
-            <SvgIcon class={s.svgIcon} name='book' />
-            <button>选词</button>
-          </li>
-          <li>
-            <SvgIcon class={s.svgIcon} name='chart' />
-            <button>统计</button>
-          </li>
-          <li>
-            <SvgIcon class={s.svgIcon} name='gear' />
-            <button>设置</button>
-          </li>
-        </ul>
+        <FooterBar selected='review'/>
       </div>
     );
   },

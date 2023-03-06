@@ -1,0 +1,35 @@
+.footerBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  width: 100%;
+  border-top: 1px solid #ddd;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 0;
+    color: #999b9a;
+    font-size: 12px;
+
+    .svgIcon {
+      width: 2.1em;
+      height: 2.1em;
+    }
+
+    button {
+      color: currentColor;
+      background-color: transparent;
+      border: none;
+    }
+
+    &.selected {
+      color: #e65f65;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+import { defineComponent, PropType } from 'vue';
+import s from './FooterBar.module.scss';
+import { SvgIcon } from './SvgIcon';
+
+export const FooterBar = defineComponent({
+  props: {
+    // selected 和 SvgIcon 的 name 一一对应
+    selected: String as PropType<
+      'review' | 'word' | 'statistics' | 'setting'
+    >,
+  },
+  setup: (props, context) => {
+    const handleReview = () => {
+      console.log('review');
+    };
+    const handleSelectWord = () => {
+      console.log('select word');
+    };
+    const handleStatistics = () => {
+      console.log('statistics');
+    };
+    const handleSetting = () => {
+      console.log('setting');
+    };
+    
+    const buttonList = [
+      {
+        name: 'review',
+        text: '复习',
+        onClick: handleReview,
+      },
+      {
+        name: 'word',
+        text: '选词',
+        onClick: handleSelectWord,
+      },
+      {
+        name: 'statistics',
+        text: '统计',
+        onClick: handleStatistics,
+      },
+      {
+        name: 'setting',
+        text: '设置',
+        onClick: handleSetting,
+      },
+    ];
+    return () => (
+      <ul class={s.footerBar}>
+        {buttonList.map(item => {
+          const isSelected = item.name === props.selected;
+          return (
+            <li class={isSelected ? s.selected : ''} onClick={item.onClick}>
+              <SvgIcon class={s.svgIcon} name={item.name} />
+              <span class={s.footerBarText}>{item.text}</span>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  },
+});
