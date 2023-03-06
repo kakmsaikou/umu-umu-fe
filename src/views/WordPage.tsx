@@ -50,7 +50,7 @@ export const WordPage = defineComponent({
             <p>{wordData.meaning}</p>
           </div>
 
-          <div class={s.examples}>
+          <div class={s.exampleListWrapper}>
             <h2>例句</h2>
             <ul class={s.examplesList}>
               {wordData.language_pair_list.map(item => {
