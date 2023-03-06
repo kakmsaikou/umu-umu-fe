@@ -19,7 +19,7 @@ export const LoginPage = defineComponent({
     return () => (
       <>
         <BackgroundWithCircle>
-          <form class={s.loginFormWrapper}>
+          <form class={s.wrapper}>
             <div class={s.inputWrapper}>
               <SvgIcon class={s.svgIcon} name='email' />
               <input

@@ -2,14 +2,14 @@
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--bg-1-color1);
+  background-color: var(--backgroundWithCircle-bg-color);
   overflow: hidden;
 
   .bgCircle {
     position: absolute;
     width: 160vw;
     height: 160vw;
-    background-color: var(--bg-1-color2);
+    background-color: var(--backgroundWithCircle-bgCircle-bg-color);
     border-radius: 50%;
     top: -295px;
     left: 50%;

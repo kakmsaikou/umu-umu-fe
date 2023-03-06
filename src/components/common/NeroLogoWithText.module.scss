@@ -2,15 +2,15 @@
   z-index: var(--z-index-level-1);
   .neroLogo {
     // 不要让图片宽度超过文字宽度太多
-    width: calc(var(--nero-text-font-size) * 5.5);
+    width: calc(var(--neroLogoWithText-neroText-font-size) * 5.5);
     display: block;
     margin: 0 auto;
     padding-bottom: 4px;
   }
 
   .neroText {
-    font-size: var(--nero-text-font-size);
-    color: var(--nero-text-color);
+    font-size: var(--neroLogoWithText-neroText-font-size);
+    color: var(--neroLogoWithText-neroText-text-color);
     text-align: center;
     max-width: calc(100vw - 60px);
     overflow: hidden;
