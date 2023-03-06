@@ -17,39 +17,34 @@ export const FooterBar = defineComponent({
     },
   },
   setup: (props, context) => {
-    const handleReview = () => {
-      console.log('review');
-    };
-    const handleSelectWord = () => {
-      console.log('select word');
-    };
-    const handleStatistics = () => {
-      console.log('statistics');
-    };
-    const handleSetting = () => {
-      console.log('setting');
-    };
-
     const buttonList: TabButton[] = [
       {
         name: 'review',
         text: '复习',
-        onClick: handleReview,
+        onClick: () => {
+          console.log('review');
+        },
       },
       {
         name: 'word',
         text: '选词',
-        onClick: handleSelectWord,
+        onClick: () => {
+          console.log('select word');
+        },
       },
       {
         name: 'statistics',
         text: '统计',
-        onClick: handleStatistics,
+        onClick: () => {
+          console.log('statistics');
+        },
       },
       {
         name: 'setting',
         text: '设置',
-        onClick: handleSetting,
+        onClick: () => {
+          console.log('setting');
+        },
       },
     ];
     return () => (

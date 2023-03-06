@@ -1,4 +1,4 @@
-import { computed, defineComponent } from 'vue';
+import { computed, defineComponent, PropType } from 'vue';
 import s from './SvgIcon.module.scss';
 
 export const SvgIcon = defineComponent({
@@ -11,11 +11,12 @@ export const SvgIcon = defineComponent({
       type: String,
       required: true,
     },
+    onClick: Function as PropType<() => void>,
   },
   setup: props => {
     const symbolId = computed(() => `#${props.prefix}-${props.name}`);
     return () => (
-      <svg class={s.svgTag} aria-hidden="true">
+      <svg class={s.svgTag} onClick={props.onClick} aria-hidden='true'>
         <use xlinkHref={symbolId.value} />
       </svg>
     );

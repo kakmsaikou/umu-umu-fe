@@ -27,19 +27,33 @@ export const WordPage = defineComponent({
       ],
     });
 
+    const handleMenuClick = () => {
+      console.log('menu click');
+    };
+
+    const handleVoiceClick = () => {
+      console.log('voice click');
+    };
+
     const applyEmphasis = (example: string, word: string) => {
       const emphasizedWord = `<strong class=${s.emphasis}>${word}</strong>`;
       return example.replace(word, emphasizedWord);
     };
 
+    const buttonList = [
+      { text: '认识', onClick: () => console.log('认识') },
+      { text: '不确定', onClick: () => console.log('不确定') },
+      { text: '不认识', onClick: () => console.log('不认识') },
+    ];
+
     return () => (
       <div class={s.wrapper}>
-        <SvgIcon class={s.menuIcon} name='menu' />
+        <SvgIcon class={s.menuIcon} name='menu' onClick={handleMenuClick} />
         <div class={s.wordWrapper}>
           <h1 class={s.word}>{wordData.word}</h1>
           <div class={s.pronunciation}>
             {wordData.pronunciation}
-            <SvgIcon class={s.voiceIcon} name='voice' />
+            <SvgIcon class={s.voiceIcon} name='voice' onClick={handleVoiceClick}/>
           </div>
         </div>
 
@@ -66,19 +80,17 @@ export const WordPage = defineComponent({
           </div>
         </div>
 
-        <ul class={s.buttonsWrapper}>
-          <li>
-            <button>认识</button>
-          </li>
-          <li>
-            <button>不确定</button>
-          </li>
-          <li>
-            <button>不认识</button>
-          </li>
+        <ul class={s.buttonListWrapper}>
+          {buttonList.map(item => {
+            return (
+              <li>
+                <button onClick={item.onClick}>{item.text}</button>
+              </li>
+            );
+          })}
         </ul>
 
-        <FooterBar selected='review'/>
+        <FooterBar selected='review' />
       </div>
     );
   },
