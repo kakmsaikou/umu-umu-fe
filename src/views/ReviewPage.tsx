@@ -54,7 +54,7 @@ export const ReviewPage = defineComponent({
           <h1 class={s.word}>{wordData.word}</h1>
           <div class={s.pronunciation}>
             <span>{wordData.pronunciation}</span>
-            <Voice class={s.voiceIcon} />
+            <Voice class={s.voiceIcon} onClick={handleVoiceClick} />
           </div>
         </div>
 
