@@ -2,12 +2,19 @@ import { defineComponent, PropType } from 'vue';
 import s from './FooterBar.module.scss';
 import { SvgIcon } from './SvgIcon';
 
+interface TabButton {
+  name: TabItem;
+  text: string;
+  onClick: () => void;
+}
+
 export const FooterBar = defineComponent({
   props: {
-    // selected 和 SvgIcon 的 name 一一对应
-    selected: String as PropType<
-      'review' | 'word' | 'statistics' | 'setting'
-    >,
+    // selected SvgIcon.name url 一一对应
+    selected: {
+      type: String as PropType<TabItem>,
+      required: true,
+    },
   },
   setup: (props, context) => {
     const handleReview = () => {
@@ -22,8 +29,8 @@ export const FooterBar = defineComponent({
     const handleSetting = () => {
       console.log('setting');
     };
-    
-    const buttonList = [
+
+    const buttonList: TabButton[] = [
       {
         name: 'review',
         text: '复习',

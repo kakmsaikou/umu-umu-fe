@@ -17,3 +17,5 @@ interface WordData {
     | [LanguagePair, LanguagePair]
     | [LanguagePair, LanguagePair, LanguagePair];
 }
+
+type TabItem = 'review' | 'word' | 'statistics' | 'setting'
