@@ -77,10 +77,15 @@
 
       li > p {
         margin-bottom: 0.5em;
-      }
 
-      .translation {
-        color: #999;
+        strong {
+          color: #e65f65;
+          font-weight: normal;
+        }
+
+        .translation {
+          color: #999;
+        }
       }
     }
   }

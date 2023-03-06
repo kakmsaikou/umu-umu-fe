@@ -25,6 +25,12 @@ export const WordPage = defineComponent({
         },
       ],
     });
+
+    const applyEmphasis = (example: string, word: string) => {
+      const emphasizedWord = `<strong class=${s.emphasis}>${word}</strong>`;
+      return example.replace(word, emphasizedWord);
+    };
+
     return () => (
       <div class={s.wrapper}>
         <SvgIcon class={s.menuIcon} name='menu' />
@@ -46,12 +52,15 @@ export const WordPage = defineComponent({
           <div class={s.examples}>
             <h2>例句</h2>
             <ul class={s.examplesList}>
-              {wordData.examples.map(item => (
-                <li>
-                  <p>{item.example}</p>
-                  <p class={s.translation}>{item.translation}</p>
-                </li>
-              ))}
+              {wordData.examples.map(item => {
+                const htmlCode = applyEmphasis(item.example, wordData.word);
+                return (
+                  <li>
+                    <p v-html={htmlCode} />
+                    <p class={s.translation}>{item.translation}</p>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
