@@ -108,6 +108,10 @@
       border-radius: 6%;
       color: white;
       box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+      &:active{
+        filter: brightness(113%);
+      }
     }
 
     li:first-child button {
