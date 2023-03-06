@@ -1,4 +1,4 @@
-import { WordPage } from './../views/WordPage';
+import { ReviewPage } from '../views/ReviewPage';
 import { LoginPage } from './../views/LoginPage';
 import {
   createRouter,
@@ -8,7 +8,7 @@ import {
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: LoginPage },
-  { path: '/word', component: WordPage },
+  { path: '/review', component: ReviewPage },
 ];
 
 export const router = createRouter({

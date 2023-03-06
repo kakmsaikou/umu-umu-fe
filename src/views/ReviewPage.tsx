@@ -2,9 +2,9 @@ import { defineComponent, reactive } from 'vue';
 import { FooterBar } from '../components/common/FooterBar';
 import { SvgIcon } from '../components/common/SvgIcon';
 import { Voice } from '../components/word/Voice';
-import s from './WordPage.module.scss';
+import s from './ReviewPage.module.scss';
 
-export const WordPage = defineComponent({
+export const ReviewPage = defineComponent({
   setup: () => {
     const wordData: WordData = reactive({
       word_id: 1,
@@ -54,7 +54,7 @@ export const WordPage = defineComponent({
           <h1 class={s.word}>{wordData.word}</h1>
           <div class={s.pronunciation}>
             <span>{wordData.pronunciation}</span>
-            <Voice class={s.voiceIcon}/>
+            <Voice class={s.voiceIcon} />
           </div>
         </div>
 
