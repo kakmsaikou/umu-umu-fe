@@ -4,13 +4,13 @@ import s from './WordPage.module.scss';
 
 export const WordPage = defineComponent({
   setup: () => {
-    const wordData = reactive({
+    const wordData: WordData = reactive({
       word_id: 1,
       word: 'プール',
       pronunciation: 'ぷーる ①',
       meaning: 'pool人造泳池',
       part_of_speech: '名词',
-      examples: [
+      example_list: [
         {
           example: '室内プール。',
           translation: '室内游泳池。',
@@ -52,7 +52,7 @@ export const WordPage = defineComponent({
           <div class={s.examples}>
             <h2>例句</h2>
             <ul class={s.examplesList}>
-              {wordData.examples.map(item => {
+              {wordData.example_list.map(item => {
                 const htmlCode = applyEmphasis(item.example, wordData.word);
                 return (
                   <li>
