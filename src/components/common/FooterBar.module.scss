@@ -5,20 +5,20 @@
   bottom: 0;
   display: flex;
   justify-content: space-around;
-  background-color: #f7f7f7;
+  background-color: var(--footBar-bg-color);
   width: 100%;
-  border-top: 1px solid #ddd;
+  border-top: var(--footBar-border-color) 1px solid;
 
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3px 0;
-    color: #999b9a;
+    color: var(--footBar-li-text-color);
     font-size: 12px;
 
     &.selected {
-      color: #e65f65;
+      color: var(--footBar-li-selected-text-color);
     }
 
     .svgIcon {
