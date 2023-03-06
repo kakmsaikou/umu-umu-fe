@@ -10,7 +10,7 @@ export const WordPage = defineComponent({
       pronunciation: 'ぷーる ①',
       meaning: 'pool人造泳池',
       part_of_speech: '名词',
-      example_list: [
+      language_pair_list: [
         {
           example: '室内プール。',
           translation: '室内游泳池。',
@@ -52,7 +52,7 @@ export const WordPage = defineComponent({
           <div class={s.examples}>
             <h2>例句</h2>
             <ul class={s.examplesList}>
-              {wordData.example_list.map(item => {
+              {wordData.language_pair_list.map(item => {
                 const htmlCode = applyEmphasis(item.example, wordData.word);
                 return (
                   <li>
