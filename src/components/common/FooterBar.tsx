@@ -53,13 +53,13 @@ export const FooterBar = defineComponent({
       },
     ];
     return () => (
-      <ul class={s.footerBar}>
+      <ul class={s.wrapper}>
         {buttonList.map(item => {
           const isSelected = item.name === props.selected;
           return (
             <li class={isSelected ? s.selected : ''} onClick={item.onClick}>
               <SvgIcon class={s.svgIcon} name={item.name} />
-              <span class={s.footerBarText}>{item.text}</span>
+              <span>{item.text}</span>
             </li>
           );
         })}

@@ -1,4 +1,4 @@
-.footerBar {
+.wrapper {
   position: fixed;
   left: 0;
   right: 0;
@@ -17,6 +17,10 @@
     color: #999b9a;
     font-size: 12px;
 
+    &.selected {
+      color: #e65f65;
+    }
+
     .svgIcon {
       width: 2.1em;
       height: 2.1em;
@@ -26,10 +30,6 @@
       color: currentColor;
       background-color: transparent;
       border: none;
-    }
-
-    &.selected {
-      color: #e65f65;
     }
   }
 }
