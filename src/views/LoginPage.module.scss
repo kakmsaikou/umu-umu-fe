@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: #ffff;
+  background-color: var(--loginPage-bg-color);
   border-radius: 7%;
   box-shadow: var(--loginPage-box-shadow);
   display: flex;
@@ -16,10 +16,10 @@
     padding: 0 4px;
     height: 48px;
     margin-bottom: 32px;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid var(--loginPage-input-border-color);
 
     .svgIcon {
-      fill: #999999;
+      fill: var(--loginPage-svgIcon-fill);
       flex-shrink: 0;
     }
 

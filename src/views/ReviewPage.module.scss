@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 6vw;
-  background-color: #fef4f3;
+  background-color: var(--reviewPage-bg-color);
   height: 100vh;
 
   .menuIcon {
@@ -13,10 +13,10 @@
   }
 
   .wordWrapper {
-    background-color: white;
-    color: #e65f65;
+    background-color: var(--reviewPage-wordWrapper-bg-color);
+    color: var(--reviewPage-wordWrapper-word-text-color);
     border-radius: 8px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--reviewPage-wordWrapper-box-shadow);
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;

@@ -4,21 +4,28 @@
   // 组件变量
   --backgroundWithCircle-bg-color: #f4f4f4;
   --backgroundWithCircle-bgCircle-bg-color: #b36a64;
-  --neroLogoWithText-neroText-text-color: white;
-  --neroLogoWithText-neroText-font-size: 24px;
+  --footBar-bg-color: #f7f7f7;
+  --footBar-border-color: #ddd;
+  --footBar-li-selected-text-color: #e65f65;
+  --footBar-li-text-color: #999b9a;
+  --loginPage-bg-color: #fff;
   --loginPage-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
-  --roundButton-text-color: white;
+  --loginPage-input-border-color: #ededed;
+  --loginPage-input-caret-color: #e65f65;
+  --loginPage-svgIcon-fill: #999999;
+  --neroLogoWithText-neroText-font-size: 24px;
+  --neroLogoWithText-neroText-text-color: white;
+  --reviewPage-bg-color: #fef4f3;
+  --reviewPage-wordWrapper-bg-color: white;
+  --reviewPage-wordWrapper-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --reviewPage-wordWrapper-word-text-color: #e65f65;
   --roundButton-bg-color: #e65f65;
-  --squareButton-text-color: white;
+  --roundButton-text-color: white;
   --squareButton-bg-color: linear-gradient(
     90deg,
     rgba(231, 96, 102, 1) 0%,
     rgba(255, 128, 107, 1) 100%
   );
   --squareButton-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  --loginPage-input-caret-color: #e65f65;
-  --footBar-bg-color:  #f7f7f7;
-  --footBar-border-color: #ddd;
-  --footBar-li-text-color: #999b9a;
-  --footBar-li-selected-text-color: #e65f65;
+  --squareButton-text-color: white;
 }
