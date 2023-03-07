@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--loginPage-bg-color);
+  background-color: var(--white);
   border-radius: 7%;
   box-shadow: var(--loginPage-box-shadow);
   display: flex;
@@ -16,10 +16,10 @@
     padding: 0 4px;
     height: 48px;
     margin-bottom: 32px;
-    border-bottom: 1px solid var(--loginPage-input-border-color);
+    border-bottom: 1px solid var(--grey-brightness-level-3);
 
     .svgIcon {
-      fill: var(--loginPage-svgIcon-fill);
+      fill: var(--grey-brightness-level-5);
       flex-shrink: 0;
     }
 
@@ -30,7 +30,7 @@
       font-size: 18px;
 
       outline: none;
-      caret-color: var(--input-text-caret-color);
+      caret-color: var(--red-brightness-level-1);
     }
 
     .evcInput {

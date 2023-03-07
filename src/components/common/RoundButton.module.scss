@@ -4,8 +4,8 @@
   height: 2em;
   border-radius: 1em;
   border: none;
-  color: var(--roundButton-text-color);
-  background-color: var(--roundButton-bg-color);
+  color: var(--white);
+  background-color: var(--red-brightness-level-1);
   transition: all 0.3s ease;
   position: relative;
   // 防止在 flex 布局中被压缩

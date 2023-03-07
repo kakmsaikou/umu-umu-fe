@@ -1,31 +1,25 @@
 :root {
   // 通用变量
   --z-index-level-1: 5;
+  // bn = brightness 十六进制越大，bn 越大
+  --grey-brightness-level-1: #f7f7f7;
+  --grey-brightness-level-2: #f4f4f4;
+  --grey-brightness-level-3: #ededed;
+  --grey-brightness-level-4: #dddddd;
+  --grey-brightness-level-5: #999999;
+  --red-brightness-level-1: #e65f65;
+  --red-brightness-level-2: #b36a64;
+  --red-brightness-level-3: #fef4f3;
+  --white: white;
+
   // 组件变量
-  --backgroundWithCircle-bg-color: #f4f4f4;
-  --backgroundWithCircle-bgCircle-bg-color: #b36a64;
-  --footBar-bg-color: #f7f7f7;
-  --footBar-border-color: #ddd;
-  --footBar-li-selected-text-color: #e65f65;
-  --footBar-li-text-color: #999b9a;
-  --loginPage-bg-color: #fff;
   --loginPage-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
-  --loginPage-input-border-color: #ededed;
-  --loginPage-input-caret-color: #e65f65;
-  --loginPage-svgIcon-fill: #999999;
   --neroLogoWithText-neroText-font-size: 24px;
-  --neroLogoWithText-neroText-text-color: white;
-  --reviewPage-bg-color: #fef4f3;
-  --reviewPage-wordWrapper-bg-color: white;
   --reviewPage-wordWrapper-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  --reviewPage-wordWrapper-word-text-color: #e65f65;
-  --roundButton-bg-color: #e65f65;
-  --roundButton-text-color: white;
   --squareButton-bg-color: linear-gradient(
     90deg,
     rgba(231, 96, 102, 1) 0%,
     rgba(255, 128, 107, 1) 100%
   );
   --squareButton-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  --squareButton-text-color: white;
 }
