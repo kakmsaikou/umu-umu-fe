@@ -2,24 +2,26 @@
   // 通用变量
   --z-index-level-1: 5;
   // bn = brightness 十六进制越大，bn 越大
-  --grey-brightness-level-1: #f7f7f7;
-  --grey-brightness-level-2: #f4f4f4;
-  --grey-brightness-level-3: #ededed;
-  --grey-brightness-level-4: #dddddd;
-  --grey-brightness-level-5: #999999;
-  --red-brightness-level-1: #e65f65;
-  --red-brightness-level-2: #b36a64;
-  --red-brightness-level-3: #fef4f3;
+  --grey-brightness-f7f: #f7f7f7;
+  --grey-brightness-f4f: #f4f4f4;
+  --grey-brightness-ede: #ededed;
+  --grey-brightness-ddd: #dddddd;
+  --grey-brightness-999: #999999;
+  --red-brightness-e65: #e65f65;
+  --red-brightness-b36: #b36a64;
+  --red-brightness-fef: #fef4f3;
   --white: white;
+  --box-shadow-light-right-bottom: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  --box-shadow-deep-right-bottom: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
 
   // 组件变量
-  --loginPage-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   --neroLogoWithText-neroText-font-size: 24px;
-  --reviewPage-wordWrapper-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
   --squareButton-bg-color: linear-gradient(
     90deg,
     rgba(231, 96, 102, 1) 0%,
     rgba(255, 128, 107, 1) 100%
   );
-  --squareButton-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --reviewPage-li-button-green: #4ac87e;
+  --reviewPage-li-button-yellow: #f7d74c;
+  --reviewPage-li-button-red: #e65f65;
 }

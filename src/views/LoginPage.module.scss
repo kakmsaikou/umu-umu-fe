@@ -1,7 +1,7 @@
 .wrapper {
   background-color: var(--white);
   border-radius: 7%;
-  box-shadow: var(--loginPage-box-shadow);
+  box-shadow: var(--box-shadow-light-right-bottom);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,10 +16,10 @@
     padding: 0 4px;
     height: 48px;
     margin-bottom: 32px;
-    border-bottom: 1px solid var(--grey-brightness-level-3);
+    border-bottom: 1px solid var(--grey-brightness-ede);
 
     .svgIcon {
-      fill: var(--grey-brightness-level-5);
+      fill: var(--grey-brightness-999);
       flex-shrink: 0;
     }
 
@@ -30,7 +30,7 @@
       font-size: 18px;
 
       outline: none;
-      caret-color: var(--red-brightness-level-1);
+      caret-color: var(--red-brightness-e65);
     }
 
     .evcInput {
