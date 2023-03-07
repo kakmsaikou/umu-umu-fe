@@ -51,6 +51,23 @@
     }
   }
 
+  .detailMask {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    overflow: auto;
+    font-size: 5vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    p:nth-child(2) {
+      color: var(--red-brightness-e65);
+    }
+  }
+
   .detailWrapper {
     background-color: var(--white);
     border-radius: 8px;
@@ -123,7 +140,7 @@
     }
 
     li:nth-child(2) button {
-      background-color: var(--reviewPage-li-button-yellow)
+      background-color: var(--reviewPage-li-button-yellow);
     }
 
     li:nth-child(3) button {

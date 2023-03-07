@@ -43,10 +43,33 @@ export const ReviewPage = defineComponent({
     };
 
     const buttonList = [
-      { text: '认识', onClick: () => console.log('认识') },
-      { text: '不确定', onClick: () => console.log('不确定') },
-      { text: '不认识', onClick: () => console.log('不认识') },
+      {
+        text: '认识',
+        onClick: () => {
+          handleDetailClick();
+          console.log('认识');
+        },
+      },
+      {
+        text: '不确定',
+        onClick: () => {
+          handleDetailClick();
+          console.log('不确定');
+        },
+      },
+      {
+        text: '不认识',
+        onClick: () => {
+          handleDetailClick();
+          console.log('不认识');
+        },
+      },
     ];
+
+    const refDetailShown = ref(false);
+    const handleDetailClick = () => {
+      refDetailShown.value = !refDetailShown.value;
+    };
     return () => (
       <div class={s.wrapper} style={innerHeightStyle()}>
         <div class={s.wordWrapper}>
@@ -58,13 +81,21 @@ export const ReviewPage = defineComponent({
           </div>
         </div>
 
-        <div class={s.detailWrapper}>
+        <div
+          class={s.detailMask}
+          onClick={handleDetailClick}
+          v-show={!refDetailShown.value}
+        >
+          <p>请把日语发音和中文解释说出口</p>
+          <p>点击屏幕显示答案</p>
+        </div>
+
+        <div class={s.detailWrapper} v-show={refDetailShown.value}>
           <div class={s.meaning}>
             <h2>释义</h2>
             <p class={s.partOfSpeech}>{wordData.part_of_speech}</p>
             <p>{wordData.meaning}</p>
           </div>
-
           <div class={s.exampleListWrapper}>
             <h2>例句</h2>
             <ul class={s.examplesList}>
@@ -81,7 +112,7 @@ export const ReviewPage = defineComponent({
           </div>
         </div>
 
-        <ul class={s.buttonListWrapper}>
+        <ul class={s.buttonListWrapper} v-show={refDetailShown.value}>
           {buttonList.map(item => {
             return (
               <li>
@@ -91,7 +122,7 @@ export const ReviewPage = defineComponent({
           })}
         </ul>
 
-        <FooterBar class={s.footBar} selected='review'/>
+        <FooterBar class={s.footBar} selected='review' />
       </div>
     );
   },

@@ -5,12 +5,10 @@ import {
   createWebHashHistory,
   RouteRecordRaw,
 } from 'vue-router';
-import { ReviewPage2 } from '../views/ReviewPage2';
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: LoginPage },
   { path: '/review', component: ReviewPage },
-  { path: '/review2', component: ReviewPage2 },
 ];
 
 export const router = createRouter({
