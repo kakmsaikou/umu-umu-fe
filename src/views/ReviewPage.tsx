@@ -1,11 +1,12 @@
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, ref } from 'vue';
 import { FooterBar } from '../components/common/FooterBar';
 import { SvgIcon } from '../components/common/SvgIcon';
 import { Voice } from '../components/word/Voice';
+import { innerHeightStyle } from '../utils/innerHeightStyle';
 import s from './ReviewPage.module.scss';
 
 export const ReviewPage = defineComponent({
-  setup: () => {
+  setup: (props, context) => {
     const wordData: WordData = reactive({
       word_id: 1,
       word: 'プール',
@@ -47,8 +48,9 @@ export const ReviewPage = defineComponent({
       { text: '不认识', onClick: () => console.log('不认识') },
     ];
 
+    const refFooterBar = ref();
     return () => (
-      <div class={s.wrapper}>
+      <div class={s.wrapper} style={innerHeightStyle(refFooterBar)}>
         <SvgIcon class={s.menuIcon} name='menu' onClick={handleMenuClick} />
         <div class={s.wordWrapper}>
           <h1 class={s.word}>{wordData.word}</h1>
@@ -91,7 +93,7 @@ export const ReviewPage = defineComponent({
           })}
         </ul>
 
-        <FooterBar selected='review' />
+        <FooterBar selected='review' ref={refFooterBar} />
       </div>
     );
   },
