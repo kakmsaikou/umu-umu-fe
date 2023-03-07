@@ -47,12 +47,10 @@ export const ReviewPage = defineComponent({
       { text: '不确定', onClick: () => console.log('不确定') },
       { text: '不认识', onClick: () => console.log('不认识') },
     ];
-
-    const refFooterBar = ref();
     return () => (
-      <div class={s.wrapper} style={innerHeightStyle(refFooterBar)}>
-        <SvgIcon class={s.menuIcon} name='menu' onClick={handleMenuClick} />
+      <div class={s.wrapper} style={innerHeightStyle()}>
         <div class={s.wordWrapper}>
+          <SvgIcon class={s.menuIcon} name='menu' onClick={handleMenuClick} />
           <h1 class={s.word}>{wordData.word}</h1>
           <div class={s.pronunciation}>
             <span>{wordData.pronunciation}</span>
@@ -93,7 +91,7 @@ export const ReviewPage = defineComponent({
           })}
         </ul>
 
-        <FooterBar selected='review' ref={refFooterBar} />
+        <FooterBar class={s.footBar} selected='review'/>
       </div>
     );
   },
