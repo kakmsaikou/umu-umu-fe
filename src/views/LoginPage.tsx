@@ -45,3 +45,5 @@ export const LoginPage = defineComponent({
     );
   },
 });
+
+export default LoginPage;

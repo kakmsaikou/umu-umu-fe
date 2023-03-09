@@ -127,3 +127,5 @@ export const ReviewPage = defineComponent({
     );
   },
 });
+
+export default ReviewPage;

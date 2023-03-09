@@ -7,8 +7,8 @@ import {
 } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
-  { path: '/', component: LoginPage },
-  { path: '/review', component: ReviewPage },
+  { path: '/', component: () => import('./../views/LoginPage') },
+  { path: '/review', component: () => import('./../views/ReviewPage') },
 ];
 
 export const router = createRouter({
