@@ -1,7 +1,7 @@
 import { defineComponent, reactive, ref } from 'vue';
 import { FooterBar } from '../components/common/FooterBar';
 import { SvgIcon } from '../components/common/SvgIcon';
-import { Voice } from '../components/word/Voice';
+import { Voice } from '../components/reviews/Voice';
 import { innerHeightStyle } from '../utils/innerHeightStyle';
 import s from './ReviewPage.module.scss';
 
