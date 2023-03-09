@@ -1,5 +1,3 @@
-import { ReviewPage } from '../views/ReviewPage';
-import { LoginPage } from './../views/LoginPage';
 import {
   createRouter,
   createWebHashHistory,
@@ -9,6 +7,7 @@ import {
 const routes: RouteRecordRaw[] = [
   { path: '/', component: () => import('./../views/LoginPage') },
   { path: '/review', component: () => import('./../views/ReviewPage') },
+  {path: '/word', component: ()=> import('../views/WordPage')},
 ];
 
 export const router = createRouter({
